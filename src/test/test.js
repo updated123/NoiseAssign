@@ -1,11 +1,12 @@
 const request = require('supertest');
 const mongoose = require('mongoose');
 const { expect } = require('chai');
-const app = require('../../server');  // Adjust this path if necessary
+const app = require('../../server');
+  
 
 describe('Sleep Tracker API', () => {
   before(async () => {
-    await mongoose.connect('mongodb://localhost:27017/sleeptracker_test', {
+    await mongoose.connect('mongodb://localhost/noise_test', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

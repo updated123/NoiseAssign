@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const sleepRoutes = require('./src/routes/sleepRoutes');
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/sleeptracker', {
+mongoose.connect('mongodb://localhost/noise', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
